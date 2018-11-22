@@ -14,3 +14,12 @@ If Woocommerce subscription is activated, it will add a target for active subscr
 
 == Installation ==
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page or use the plugin uploader.
+
+== Changelog ==
+
+= 1.0.1 =
+
+* Added a filter for the post types
+ 
+= 1.0.0 =
+* First version

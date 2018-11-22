@@ -3,7 +3,7 @@
 Plugin Name: WP context for GetSiteControl
 Plugin URI:  https://kanvas.fr/getsitecontrol-wordpress-tag
 Description: Add some useful tags in the header to work well with GetSiteControl
-Version:     1.0.0
+Version:     1.0.1
 Author:      Mathieu Basili
 Author URI:  https://kanvas.fr
 Text Domain: kvgsctag
@@ -44,8 +44,10 @@ function kv_add_content_footer(){
 			
 		}
 	}
-	
-	if( is_singular('post') ) {
+
+	$post_types = apply_filters( 'wpgsc_posttypes', array('post') );
+	error_log(implode(' - ', $post_types));
+	if( is_singular($post_types) ) {
 		
 		global $post;
 		$tag_ids = wp_get_post_terms( $post->ID, 'post_tag', array( 'fields' => 'id=>slug' ) );
