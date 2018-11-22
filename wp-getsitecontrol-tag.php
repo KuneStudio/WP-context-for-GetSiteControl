@@ -45,8 +45,8 @@ function kv_add_content_footer(){
 		}
 	}
 
-	$post_types = apply_filters( 'wpgsc_posttypes', array('post') );
-	error_log(implode(' - ', $post_types));
+	$post_types = apply_filters( 'wpgsc_posttypes', array('post', 'product') );
+
 	if( is_singular($post_types) ) {
 		
 		global $post;

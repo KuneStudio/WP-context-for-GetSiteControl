@@ -13,6 +13,7 @@ It will add some target info for logged in users, post and product tags.
 If Woocommerce subscription is activated, it will add a target for active subscribers.
 
 For more documentation, check out the Github repo : https://github.com/agenceKanvas/WP-context-for-GetSiteControl
+And the wiki : https://github.com/agenceKanvas/WP-context-for-GetSiteControl/wiki
 
 == Installation ==
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page or use the plugin uploader.
